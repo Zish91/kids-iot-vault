@@ -7,7 +7,7 @@
 
 > **Secure infrastructure and digital vault for managing, backing up, and automating educational IoT devices via Home Assistant.**
 
-[Afficher la version Française 🇫🇷](README.fr .md)
+[Afficher la version Française 🇫🇷](README.fr.md)
 
 ---
 
