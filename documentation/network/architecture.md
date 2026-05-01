@@ -1,6 +1,6 @@
 # Network Architecture
 
-[Version Française 🇫🇷](architechture.fr.md)
+[Version Française 🇫🇷](architecture.fr.md)
 
 ---
 
