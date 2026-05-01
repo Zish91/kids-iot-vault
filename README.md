@@ -1,7 +1,7 @@
 # Kids-IoT-Vault
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Language: FR](https://img.shields.io/badge/Language-Français-blue.svg)](README.fr.md)
+![Language](https://img.shields.io/badge/Language-EN%20%7C%20FR-green)
 ![Status: Work in Progress](https://img.shields.io/badge/Status-Work_in_Progress-orange)
 ![Made with: Home Assistant](https://img.shields.io/badge/Made_with-Home_Assistant-blue?logo=home-assistant)
 
