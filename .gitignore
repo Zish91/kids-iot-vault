@@ -1,0 +1,14 @@
+# Secrets
+*.token
+*.key
+.env
+secrets.yaml
+
+# Médias (Copyright & Poids)
+*.m4a
+*.mp3
+*.wav
+
+# Système
+.DS_Store
+Thumbs.db
