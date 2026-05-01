@@ -31,3 +31,40 @@ Le projet est construit en trois phases principales. Tout d'abord, la mise en pl
 Une fois le système de base opérationnel, l'effort se porte sur **l'intégration des appareils**. L'objectif est d'établir une communication sécurisée avec les objets connectés (comme la Yoto ou la Lunii) pour centraliser leur gestion.
 
 Enfin, le projet vise à implémenter une **solution de sauvegarde locale**. En s'affranchissant de la dépendance au cloud, pour garantir que le contenu éducatif reste accessible et protégé au sein du réseau local, même sans accès internet.
+
+---
+
+### Structure du Dépôt
+
+*   **data/** : Stockage des médias (ignorés par Git via `.gitignore`).
+    *   `import/yoto-raw/` : Dossier source des fichiers MP3 bruts.
+    *   `export/yoto-ready/` : Fichiers nettoyés prêts pour l'appareil.
+*   **scripts/media-extraction/** : Contient `yoto-hack.sh`.
+*   **documentation/** : Guides détaillés et schémas d'infrastructure.
+
+---
+
+### Démarrage Rapide
+
+1. **Cloner le projet** :
+`git clone https://github.com/TON_USER/Kids-IoT-Vault.git`
+
+2. **Préparer l'arborescence** :
+`mkdir -p data/import/yoto-raw data/export/yoto-ready`
+
+3. **Lancer le script de nettoyage** :
+`bash scripts/media-extraction/yoto-hack.sh`
+*(Ce script automatise le renommage : suppression des accents, espaces et caractères spéciaux pour une compatibilité matérielle parfaite).*
+
+---
+
+### Stratégie de Développement & Bonnes Pratiques
+
+Le projet est construit en trois phases principales : la virtualisation avec **Proxmox**, l'intégration des appareils, et la sauvegarde locale.
+
+Chaque action sur ce dépôt respecte une progression stricte :
+*   **Étape par étape** : Pas de génération de code massive sans explication préalable.
+*   **Atomicité** : Un script répond à un besoin spécifique et documenté.
+*   **Souveraineté** : Traitement local privilégié pour garantir l'accès permanent aux contenus.
+
+---
