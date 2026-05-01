@@ -4,10 +4,15 @@
 .env
 secrets.yaml
 
+# Dossiers de données (Contenu volumineux & temporaire)
+data/import/
+data/export/
+
 # Médias (Copyright & Poids)
 *.m4a
 *.mp3
 *.wav
+*.zip
 
 # Système
 .DS_Store
