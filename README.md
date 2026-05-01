@@ -31,3 +31,44 @@ The project is being built in three main phases. First, I am setting up a profes
 Once the core system is operational, the focus shifts to device integration. The goal is to establish secure communication with IoT devices (like Yoto or Lunii) to centralize their management.
 
 Finally, the project aims to implement a local backup solution. By moving away from cloud dependency, we ensure that educational content remains accessible and protected within our own local network, even without internet access.
+
+---
+
+### Repository Structure
+
+*   **data/**: Media storage (ignored by Git via `.gitignore`).
+    *   `import/yoto-raw/`: Source folder for raw MP3 files.
+    *   `export/yoto-ready/`: Cleaned files ready for the device.
+*   **scripts/media-extraction/**: Contains `yoto-hack.sh`.
+*   **documentation/**: Detailed guides and infrastructure diagrams.
+
+---
+
+### Quick Start
+
+1. **Clone the project**:
+`git clone https://github.com/YOUR_USER/Kids-IoT-Vault.git`
+
+2. **Prepare the directory structure**:
+`mkdir -p data/import/yoto-raw data/export/yoto-ready`
+
+3. **Run the cleaning script**:
+`bash scripts/media-extraction/yoto-hack.sh`
+*(This script automates renaming: removing accents, spaces, and special characters for perfect hardware compatibility).*
+
+---
+
+### Development Strategy & Best Practices
+
+The project is built in three main phases: virtualization with **Proxmox**, device integration, and local backup.
+
+Every action on this repository follows a strict progression:
+*   **Step-by-step**: No massive code generation without prior explanation.
+*   **Atomicity**: Each script serves a specific, documented need.
+*   **Sovereignty**: Local processing is prioritized to ensure permanent access to content.
+
+---
+
+
+
+
